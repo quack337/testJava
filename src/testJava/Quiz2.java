@@ -18,6 +18,7 @@ class Solution6 {
             } else {
                 currentValue = A[i];
                 total = total + numberOfFair(count);
+                if (total >= 1000000000) return 1000000000;
                 count = 1;
             }
         }
